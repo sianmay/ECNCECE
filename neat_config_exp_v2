@@ -1,0 +1,97 @@
+[NEAT]
+fitness_criterion = max
+fitness_threshold = 20
+pop_size = 150
+reset_on_extinction = true
+no_fitness_termination = true
+
+[CustomGenome]
+structural_mutation_surer = true
+single_structural_mutation = false
+
+# Node activation options
+activation_default = sigmoid
+activation_mutate_rate = 0.0
+activation_options = sigmoid
+
+# Node aggregation options
+aggregation_default = sum
+aggregation_mutate_rate = 0.0
+aggregation_options = sum
+
+# Node bias options
+bias_init_mean = 0.0
+bias_init_stdev = 1.0
+bias_max_value = 30.0
+bias_min_value = -30.0
+bias_mutate_power = 0.4
+bias_mutate_rate = 0.1
+bias_replace_rate = 0.01
+
+# Genome compatibility options
+compatibility_disjoint_coefficient = 0.5
+compatibility_weight_coefficient = 1
+
+# Connection add/remove rates
+conn_add_prob = 0.5
+conn_delete_prob = 0.5
+
+# Connection enable options
+enabled_default = true
+enabled_mutate_rate = 0.0
+
+feed_forward = true
+initial_connection = full_nodirect
+
+# Node add/remove rates
+node_add_prob = 0.5
+node_delete_prob = 0.0
+
+# Network parameters
+num_hidden = 1
+num_inputs = 243
+num_outputs = 5
+
+# Node response options
+response_init_mean = 1.0
+response_init_stdev = 0.0
+response_max_value = 30.0
+response_min_value = -30.0
+response_mutate_power = 0.0
+response_mutate_rate = 0.0
+response_replace_rate = 0.0
+
+# Connection weight options
+weight_init_mean = 0.0
+weight_init_stdev = 1.0
+weight_max_value = 30.0
+weight_min_value = -30.0
+weight_mutate_power = 0.5
+weight_mutate_rate = 0.1
+weight_replace_rate = 0.01
+
+# RL hyperparameter options
+mutate_batch_size = 0.01
+mutate_n_steps = 0.01
+mutate_gamma = 0.15
+mutate_learning_rate = 0.01
+mutate_ent_coef = 0.02
+mutate_clip_range = 0.25
+mutate_n_epochs = 0.2
+mutate_gae_lambda = 0.02
+mutate_max_grad_norm = 0.01
+mutate_vf_coef = 0.05
+mutate_activation_fn = 0.2
+mutate_lr_schedule = 0.05
+
+[DefaultSpeciesSet]
+compatibility_threshold = 4
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation = 20
+species_elitism = 2
+
+[DefaultReproduction]
+elitism = 2
+survival_threshold = 0.1
