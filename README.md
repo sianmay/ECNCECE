@@ -3,7 +3,7 @@
 ## Setup
 1. Clone the repository
 ```bash
-git clone https://github.com/ECNCECE-anonymous/ECNCECE.git
+git clone https://github.com/sianmay/ECNCECE.git
 cd ECNCECE
 ```
 
